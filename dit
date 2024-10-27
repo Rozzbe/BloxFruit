@@ -3,18 +3,18 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/synx/main/rzsul/modified.lua"))()
 
 local Window = redzlib:MakeWindow({
-  Title = "Rozz Hub [beta]",
-  SubTitle = "report bug in my server discord!",
-  SaveFolder = "Rozz.lua"
+  Title = "mbm hub trial release",
+  SubTitle = "Stay tuned for updates and announcements in my Discord server",
+  SaveFolder = "MBM_HUB.lua"
 })
 
 local Tab = {
   info = Window:MakeTab({"Info", ""}),
-  main = Window:MakeTab({"Main", ""}),
+  main = Window:MakeTab({"main", ""}),
   sub = Window:MakeTab({"Sub", ""}),
   fruit = Window:MakeTab({"Fruit", ""}),
   raid = Window:MakeTab({"Raid", ""}),
-  event = Window:MakeTab({"Sea Event", ""}),
+  event = Window:MakeTab({"sea event", ""}),
   teleport = Window:MakeTab({"Teleport", ""}),
   player = Window:MakeTab({"Player", ""}),
   race = Window:MakeTab({"Race", ""}),
@@ -90,13 +90,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/heatdeck123/firarst/m
 
 -- lct
 local ab = Tab.info:Addprofile({
-  Desc = "Status: Comming Soon"
+  Desc = "status : soon"
 })
 
 Tab.info:AddDiscordInvite({
-  Name = "Rozz Hub",
+  Name = "MBM Hub | Community",
   Logo = "",
-  Invite = ""
+  Invite = "https://dsc.gg/m1m"
 })
 
 Tab.info:AddTextBox({
@@ -127,16 +127,16 @@ Tab.info:AddTextBox({
     })
   
     local chag = Tab.info:AddDropdown({
-      Name = "Select",
+      Name = "select",
       Description = "",
-      Options = {"Background","Text","ScrollBar","Theme","Stroke","desc"},
+      Options = {"Background", "text", "ScrollBar","Theme","Stroke","desc"},
       Default = "text",
       Callback = function(Value)
         _G.RGB = Value
       end
     })
     Tab.info:AddParagraph({"Recommended", "change color text and desc"})
-    local But = Tab.info:AddButton({"Apply Color", function()
+    local But = Tab.info:AddButton({"chage color", function()
       local Dia = Window:Dialog({
         Title = "RGB",
         Text = "",
@@ -163,7 +163,7 @@ Tab.info:AddTextBox({
       })
     end})
 
-    local But = Tab.info:AddButton({"Reset Color", function()
+    local But = Tab.info:AddButton({"reset color", function()
       local Dia = Window:Dialog({
         Title = "Are you sure?",
         Text = "",
@@ -190,7 +190,7 @@ Tab.info:AddTextBox({
     _G.Fast_Delay = tonumber(_G.atkDelay)
 
     local ch = Tab.main:AddDropdown({
-      Name = "Select Weapon",
+      Name = "select weapon",
       Description = "Recommended Melee",
       Options = {"Sword", "Melee", "Fruit"},
       Default = "Melee",
@@ -218,19 +218,19 @@ Tab.info:AddTextBox({
     })
 
     local Toggle4 = Tab.main:AddToggle({
-      Name = "Auto Click",
+      Name = "auto click",
       Description = "",
       Default = false
     })
 
     local Toggle5 = Tab.main:AddToggle({
-      Name = "Auto Spawn Katakuri",
+      Name = "auto spawn katakuri",
       Description = "",
       Default = false
     })
 
     Tab.main:AddDropdown({
-      Name = "Select Stat",
+      Name = "select stats",
       Description = "Recommended Melee",
       Options = {"Gun","Defense","Sword", "Melee", "Fruit"},
       Default = {"Melee","Defense"},
@@ -241,17 +241,17 @@ Tab.info:AddTextBox({
     })
     local ran
     Tab.main:AddDropdown({
-      Name = "Select Sea",
+      Name = "select sea",
       Description = "",
-      Options = {"low","medium","high","extreme","crazy","????"},
+      Options = {"low","medium","high","extreme","Crazy","????"},
       Default = "????",
       Callback = function(Value)
         ran = Value
       end
     })
     local modef = Tab.main:AddToggle({
-      Name = "Auto Accpet Quest",
-      Description = "for bone farm & katakuri farm",
+      Name = "accept quest",
+      Description = "bone farm & katakuri farm",
       Default = false
     })
     modef:Callback(function(Value)
@@ -267,7 +267,7 @@ Tab.info:AddTextBox({
       end
     })
 
-    Tab.info:AddButton({"Boost Fps", function()
+    Tab.info:AddButton({"boost fps", function()
       Window:Dialog({
         Title = "Are you sure?",
         Text = "",
@@ -300,7 +300,7 @@ hide:Callback(function(Value)
 end)
 end)
 local fatu = Tab.main:AddToggle({
-  Name = "Fast Attack",
+  Name = "fast attack",
   Description = "",
   Default = true
 })
@@ -407,7 +407,7 @@ end)
     end)    
 
 local Tog = Tab.main:AddToggle({
-  Name = "Mob Aura",
+  Name = "near mob farm",
   Description = "",
   Default = false
 })
@@ -417,7 +417,7 @@ Tog:Callback(function(Value)
 end)
 
               local Togs = Tab.main:AddToggle({
-                Name = "Pirate Raid & Rip_Indra Farm",
+                Name = "castle raid + indra farm",
                 Description = "",
                 Default = false
               })
@@ -428,7 +428,7 @@ end)
 
             Tab.event:AddSection({"Soon"})
             local adfsad = Tab.main:AddToggle({
-              Name = "Auto CDK [BETA]",
+              Name = "auto cdk [BETA]",
               Description = "",
               Default = false
             })
@@ -436,7 +436,7 @@ end)
               Auto_Cursed_Dual_Katana = Value
             end)
             local YYa = Tab.main:AddToggle({
-                Name = "Auto Active V4",
+                Name = "auto turn on v4",
                 Description = "",
                 Default = false
               })
@@ -455,7 +455,7 @@ end)
             end
             end)
             local tta = Tab.main:AddToggle({
-                Name = "Auto Active V3",
+                Name = "auto turn on v3",
                 Description = "",
                 Default = false
               })
@@ -473,7 +473,7 @@ end)
               end)
 
               local wlk = Tab.main:AddToggle({
-                Name = "Water Walker",
+                Name = "water walker",
                 Description = "",
                 Default = false
               })
@@ -496,7 +496,7 @@ end)
 
 
 local atksss = Tab.main:AddToggle({
-  Name = "Auto Ken Haki",
+  Name = "auto use ken haki",
   Description = "",
   Default = false
 })
@@ -521,7 +521,7 @@ spawn(function()
 end)  
 
 local kps = Tab.main:AddToggle({
-  Name = "Auto Player Quest",
+  Name = "kill player with quest",
   Description = "",
   Default = false
 })
@@ -593,7 +593,7 @@ end)
 
 
 local rjs = Tab.main:AddButton({
-  Name = "Rejoin",
+  Name = "rejoin server",
   Description = ""
 })
 rjs:Callback(function()
@@ -704,14 +704,14 @@ function Hop()
 end      
 
 local hop = Tab.main:AddButton({
-    Name = "Hop Server",
+    Name = "hop server",
     Description = ""
   })
 hop:Callback(function()
 Hop()
 end)
 local zou = Tab.main:AddButton({
-    Name = "TP to Sea3",
+    Name = "sea 3",
     Description = ""
   })
 zou:Callback(function()
@@ -719,7 +719,7 @@ zou:Callback(function()
 end)
 
 local dessrosa = Tab.main:AddButton({
-    Name = "TP to Sea2",
+    Name = "sea 2",
     Description = ""
   })
   dessrosa:Callback(function()
@@ -727,14 +727,14 @@ local dessrosa = Tab.main:AddButton({
 end)
 
 local tvm = Tab.main:AddButton({
-    Name = "TP to Sea1",
+    Name = "sea 1",
     Description = ""
   })
 tvm:Callback(function()
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
 end)
 local ttp = Tab.main:AddToggle({
-  Name = "Bring Fruit",
+  Name = "collect fruit tp",
   Description = "",
   Default = false
 })
@@ -754,7 +754,7 @@ spawn(function()
      end)
 
      local ttpi = Tab.main:AddToggle({
-      Name = "Tween Island",
+      Name = "teleport island",
       Description = "",
       Default = false
     })
